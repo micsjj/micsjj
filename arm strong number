@@ -1,0 +1,18 @@
+public class Main{
+public static void main(String[]args){
+int num = 153;
+int temp = num;
+int power = 0;
+while(num>0){
+int rem = num%10;
+power = power+(rem*rem*rem);
+num = num/10;
+}
+if(temp==power){
+System.out.println(temp+" is an arm strong number");
+}
+else{
+System.out.println(temp+" is an not an arm strong number");
+}
+}
+}
